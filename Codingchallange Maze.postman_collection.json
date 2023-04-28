@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "2584e874-bb7e-40ec-a3ff-cead71bbeed6",
+		"name": "Codingchallange Maze",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"happyUsera\",\n    \"password\": \"iTk19!n\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/user",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"happyUsera\",\n    \"password\": \"iTk19!n\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/login",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Maze",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer f543640g8kvuxkegulqp6rmzu62bxw5c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/maze/generate",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"maze",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Draw maze",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer f543640g8kvuxkegulqp6rmzu62bxw5c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"entrance\":\"A1\",\"gridSize\":\"8x8\",\"walls\":[\"C1\", \"G1\", \"A2\", \"C2\", \"E2\", \"G2\", \"C3\", \"E3\", \"B4\", \"C4\", \"E4\", \"F4\", \"G4\", \"B5\", \"E5\", \"B6\", \"D6\", \"E6\", \"G6\", \"H6\", \"B7\", \"D7\", \"G7\", \"B8\"]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/maze/draw",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"maze",
+						"draw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get my mazes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer f543640g8kvuxkegulqp6rmzu62bxw5c",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/maze",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"maze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solve maze",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 608yr3iznlnyf425jugkvdiawyjg8pir",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/maze/E42/solution",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"maze",
+						"E42",
+						"solution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Maze",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer f543640g8kvuxkegulqp6rmzu62bxw5c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"entrance\":\"A1\",\"gridSize\":\"8x8\",\"walls\":[\"C1\", \"G1\", \"A2\", \"C2\", \"E2\", \"G2\", \"C3\", \"E3\", \"B4\", \"C4\", \"E4\", \"F4\", \"G4\", \"B5\", \"E5\", \"B6\", \"D6\", \"E6\", \"G6\", \"H6\", \"B7\", \"D7\", \"G7\", \"B8\"]}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mazeapi.pcbaecker.com/maze",
+					"protocol": "https",
+					"host": [
+						"mazeapi",
+						"pcbaecker",
+						"com"
+					],
+					"path": [
+						"maze"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
